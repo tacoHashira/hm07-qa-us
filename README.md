@@ -67,7 +67,7 @@ Test 3: PUT test (Changing the price of an item & 200 Status Code)
             {"price": 175}
         4. Send request
 
-Test 4: DELETE test (Deleting a kit & 200 Status Code)
+Test 4: DELETE test (Deleting a kit & 200 Status Code)`
     URL: https://cnt-d8b4f3bd-1395-4b5e-8146-958daf311d50.containerhub.tripleten-services.com/api/v1/kits/7
     *In VS Code:
         1. Open deleteHandlers.test.js
