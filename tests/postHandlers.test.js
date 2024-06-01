@@ -29,7 +29,7 @@ test('Should check availability of goods in "Fresh Food" warehouse', async () =>
 	} catch (error) {
 		console.error(error);
 	}
-	expect(actualResponseBody).toContain('Fresh Food');
+	expect(actualResponseBody).toContain({"Big World": {"Fruit Power Juice - Litchi": false, "Sprite Soft Drink": false}, "Everything You Need": {"Fruit Power Juice - Litchi": false, "Sprite Soft Drink": true}, "Food City": {"Fruit Power Juice - Litchi": true, "Sprite Soft Drink": true}, "Fresh Food": {"Fruit Power Juice - Litchi": true, "Sprite Soft Drink": true}});
 });
 
 test('Should return status code 200', async () => {
