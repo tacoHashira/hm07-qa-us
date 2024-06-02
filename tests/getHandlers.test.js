@@ -9,7 +9,7 @@ test('Should check for "Everything You Need" warehouse', async () => {
 	} catch (error) {
 		console.error(error);
 	}
-	expect(actualResponseBody).toContain('Everything You Need')
+	expect(actualResponseBody[0]["name"]).toBe("Everything You Need")
 });
 
 test('Should return status code 200', async () => {
