@@ -11,7 +11,7 @@ test('Should delete a kit', async () => {
 	} catch (error) {
 		console.error(error);
 	}
-	expect(actualResponseBody).toBe({"ok":true})
+	expect(actualResponseBody).toEqual({"ok":true})
 });
 
 test('Should return status code 200', async () => {
